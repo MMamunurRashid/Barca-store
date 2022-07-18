@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.5em !important;
+}
+h3 {
+  font-size: 1em !important;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background-color: #562eff;
+}
+.mynav {
+  width: 80%;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  background-color: antiquewhite;
+  padding: 1em;
+  margin: 2px;
+  border-radius: 10px;
+}
+.section-title {
+  background-image: linear-gradient(45deg, darkslategrey, antiquewhite);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: bold;
+}
+main {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.top-playes,
+.newses,
+.stores {
+  display: grid;
+  grid-gap: 30px;
+  margin-top: 20px;
+  place-items: center;
+}
+.top-playes {
+  grid-template-columns: repeat(3, 1fr);
+}
+.newses {
+  grid-template-columns: repeat(2, 1fr);
+}
+.stores {
+  grid-template-columns: repeat(3, 1fr);
+}
+.player,
+.news,
+.store {
+  display: flex;
+  align-items: center;
+}
+.thumnail img {
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.player img {
+  margin-right: 5px;
+  height: 50px;
+}
+.store img {
+  height: 200px;
+  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.filled {
+  color: goldenrod;
+  font-size: 0.8em;
+}
+.unfilled {
+  color: goldenrod;
+  font-size: 0.8em;
+}
+@media (max-width: 992px) {
+  .top-playes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newses {
+    grid-template-columns: repeat(1, 1fr);
+    display: block;
+    padding-bottom: 15px;
+  }
+  .stores {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 688px) {
+  .top-playes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .newses {
+    grid-template-columns: repeat(1, 1fr);
+    display: block;
+    padding-bottom: 15px;
+  }
+  .stores {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.button {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, lightsalmon, tomato);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: bold;
+}
+a {
+  font-size: 15px;
+}
+.navbar {
+  background-color: midnightblue !important;
+}
+.nav--title {
+  color: whitesmoke;
+
+  font-size: 35px;
+}
